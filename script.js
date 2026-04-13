@@ -4,7 +4,7 @@ const todoList = [
     dueDate: "2022-12-22",
   },
   {
-    name: "Finish the project",ej
+    name: "Finish the project",
     dueDate: "2022-12-22",
   },
 ];
@@ -16,9 +16,6 @@ function renderTodoList() {
 
   for (let i = 0; i < todoList.length; i++) {
     const todoObject = todoList[i];
-    //const name = todoObject.name;
-    //const dueDate = todoObject.dueDate;
-    // const { name, dueDate } = todoObject;
     const name = todoObject.name;
     const dueDate = todoObject.dueDate;
     const html = `
@@ -46,8 +43,6 @@ function addTodo() {
   const dueDate = dateInputElement.value;
 
   todoList.push({
-    //name: name,
-    //dueDate: dueDate,
     name,
     dueDate,
   });
